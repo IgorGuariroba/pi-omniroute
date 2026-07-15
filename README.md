@@ -11,19 +11,24 @@ Extensão de provider para o [Pi Coding Agent](https://github.com/earendil-works
 
 ## Instalação
 
-Copie o arquivo para a pasta de extensões do Pi:
+Como pacote Pi, direto do GitHub (recomendado):
+
+```bash
+pi install https://github.com/IgorGuariroba/pi-omniroute
+```
+
+Via npm (após publicação no registry):
+
+```bash
+pi install npm:@igorguariroba/pi-omniroute
+```
+
+Ou manualmente, copiando o arquivo para a pasta de extensões do Pi:
 
 ```bash
 mkdir -p ~/.pi/agent/extensions
-curl -fsSL https://raw.githubusercontent.com/IgorGuariroba/pi-omniroute/main/omniroute.ts \
+curl -fsSL https://raw.githubusercontent.com/IgorGuariroba/pi-omniroute/main/extensions/omniroute.ts \
   -o ~/.pi/agent/extensions/omniroute.ts
-```
-
-Ou clone o repositório:
-
-```bash
-git clone https://github.com/IgorGuariroba/pi-omniroute /tmp/pi-omniroute
-cp /tmp/pi-omniroute/omniroute.ts ~/.pi/agent/extensions/
 ```
 
 Em sessões do Pi já abertas, rode `/reload` para carregar a extensão.

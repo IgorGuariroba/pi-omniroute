@@ -1,0 +1,15 @@
+{
+  "name": "@igorguariroba/pi-omniroute",
+  "version": "0.1.0",
+  "description": "Extensão de provider OmniRoute para o Pi Coding Agent — gateway de IA com 236+ providers em um endpoint OpenAI-compatible",
+  "keywords": ["pi-package", "pi", "omniroute", "llm", "provider"],
+  "author": "Igor Guariroba",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorGuariroba/pi-omniroute.git"
+  },
+  "pi": {
+    "extensions": ["./extensions"]
+  }
+}
