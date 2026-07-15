@@ -1,5 +1,5 @@
 {
-  "name": "@igorguariroba/pi-omniroute",
+  "name": "@igor-guari/pi-omniroute",
   "version": "0.1.0",
   "description": "Extensão de provider OmniRoute para o Pi Coding Agent — gateway de IA com 236+ providers em um endpoint OpenAI-compatible",
   "keywords": ["pi-package", "pi", "omniroute", "llm", "provider"],

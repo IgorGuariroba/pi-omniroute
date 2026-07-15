@@ -20,7 +20,7 @@ pi install https://github.com/IgorGuariroba/pi-omniroute
 Via npm (após publicação no registry):
 
 ```bash
-pi install npm:@igorguariroba/pi-omniroute
+pi install npm:@igor-guari/pi-omniroute
 ```
 
 Ou manualmente, copiando o arquivo para a pasta de extensões do Pi:
