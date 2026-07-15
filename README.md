@@ -1,5 +1,8 @@
 # pi-omniroute
 
+[![npm version](https://img.shields.io/npm/v/@igor-guari/pi-omniroute)](https://www.npmjs.com/package/@igor-guari/pi-omniroute)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 Extensão de provider para o [Pi Coding Agent](https://github.com/earendil-works/pi) que conecta o Pi ao [OmniRoute](https://github.com/diegosouzapw/OmniRoute) — um gateway de IA open-source que agrega 236+ providers em um único endpoint OpenAI-compatible.
 
 ## Recursos
@@ -11,16 +14,16 @@ Extensão de provider para o [Pi Coding Agent](https://github.com/earendil-works
 
 ## Instalação
 
-Como pacote Pi, direto do GitHub (recomendado):
-
-```bash
-pi install https://github.com/IgorGuariroba/pi-omniroute
-```
-
-Via npm (após publicação no registry):
+Via npm (recomendado):
 
 ```bash
 pi install npm:@igor-guari/pi-omniroute
+```
+
+Ou direto do GitHub:
+
+```bash
+pi install https://github.com/IgorGuariroba/pi-omniroute
 ```
 
 Ou manualmente, copiando o arquivo para a pasta de extensões do Pi:
@@ -64,9 +67,25 @@ Depois de configurado, selecione um modelo:
 
 Os modelos do OmniRoute aparecem sob o provider `omniroute`.
 
-## Uso com PI WEB / Docker
+## Uso com PI WEB / Docker / Dokploy
 
 Funciona normalmente em sessões do [PI WEB](https://github.com/jmfederico/pi-web). Em containers, monte `~/.pi` como volume persistente e defina as variáveis de ambiente `OMNIROUTE_BASE_URL` / `OMNIROUTE_API_KEY`, ou faça `/login omniroute` uma vez em qualquer sessão.
+
+Para instalar automaticamente no boot do container (idempotente):
+
+```bash
+pi install npm:@igor-guari/pi-omniroute
+```
+
+🚀 **Deploy pronto**: veja [pi-web-dokploy](https://github.com/IgorGuariroba/pi-web-dokploy) — PI WEB no [Dokploy](https://dokploy.com/) com Traefik, Basic Auth e esta extensão já integrada.
+
+## Atualização
+
+```bash
+pi update npm:@igor-guari/pi-omniroute   # ou: pi update --all
+```
+
+Depois rode `/reload` nas sessões do Pi abertas.
 
 ## Licença
 
